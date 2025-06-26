@@ -54,8 +54,13 @@ function Calculator() {
 }
 
 function CalculatorButton({ value }) {
+  const buttonStyles = [
+    'string': 
+  ]
+
+  const buttonStyle = buttonStyles[typeof value]
   return (
-    <button className="bg-neutral-200 text-neutral-900 rounded-md h-10 cursor-pointer">
+    <button className={buttonStyle + "bg-neutral-200 text-neutral-900 rounded-md h-10 cursor-pointer"}>
       {value}
     </button>
   );
