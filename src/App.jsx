@@ -108,11 +108,12 @@ function Calculator() {
 }
 
 function CalculatorButton({ value, onClick }) {
-  const baseStyles = ' bg-emerald-200 text-neutral-900 rounded-md h-11 cursor-pointer ';
+  const baseStyles =
+    " border text-neutral-50 rounded-md h-11 cursor-pointer transition-all";
   const buttonStyles = {
-    string: "bg-red-200",
-    number: "bg-sky-200",
-    undefined: "bg-emerald-200",
+    string: "border-red-500",
+    number: "border-sky-500",
+    undefined: "border-emerald-500",
   };
 
   if (["x", "÷", "−", '+'].includes(value)) {
