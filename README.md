@@ -1,12 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Simple-React-Calculator
 
-Currently, two official plugins are available:
+A simple calculator built with Tailwind CSS, React.js, and Vue.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Calculator Screenshot](https://i.imgur.com/MTMm4nm.png)
+## Installation
 
-## Expanding the ESLint configuration
+Install the calculator with Git clone
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`git clone https://github.com/defrostedjpg/simple-react-calculator.git`
+
+Install npm modules
+
+`cd simple-react-calculator`
+
+`npm install`
+
+Run the project locally
+
+`npm run dev`
+## Libraries & Plugins
+
+- React.js
+- Tailwind CSS
+- Decimal.js
+
+
+## Lessons Learned
+
+I learned how to fix the dreaded fixed floating number precision when dealing with Javascript - By using [Decimal.js](https://www.npmjs.com/package/decimal.js/v/3.0.0).
+
+I also learned how to reduce clutter in the code, by avoiding If statements when possible. I know my code may still look messy, but everyone starts somewhere.
+
+
+## Acknowledgements
+
+ - [React.js](https://react.dev/)
+ - [ReadMe.so](https://readme.so/)
+ - [Decimal.js](https://mikemcl.github.io/decimal.js/)
+
