@@ -49,8 +49,13 @@ function Calculator() {
             .replace(/÷/g, "/")
             .replace(/−/g, "-");
 
+            try {
           const result = new Decimal(eval(calculation).toFixed(10))
           setDisplayValue(() => result.toString());
+            } catch (error) {
+              setDisplayValue("Error");
+              console.log(error);
+            }
         }
       }
     }
@@ -109,11 +114,10 @@ function Calculator() {
 
 function CalculatorButton({ value, onClick }) {
   const baseStyles =
-    " border text-neutral-50 rounded-md h-11 cursor-pointer transition-all";
+    " border border-emerald-500 hover:bg-emerald-500 text-neutral-50 rounded-md h-11 cursor-pointer transition-colors duration-300";
   const buttonStyles = {
-    string: "border-red-500",
-    number: "border-sky-500",
-    undefined: "border-emerald-500",
+    string: "border-red-500 hover:bg-red-500",
+    number: "border-sky-500 hover:bg-sky-500",
   };
 
   if (["x", "÷", "−", '+'].includes(value)) {
