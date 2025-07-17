@@ -3,7 +3,7 @@
 
 A simple calculator built with Tailwind CSS, React.js, and Vue.js
 
-![Calculator Screenshot](https://i.imgur.com/MTMm4nm.png)
+![Calculator Screenshot](https://i.imgur.com/p302KFR.png)
 ## Installation
 
 Install the calculator with Git clone
