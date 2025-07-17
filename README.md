@@ -2,6 +2,7 @@
 # Simple-React-Calculator
 
 A simple calculator built with Tailwind CSS, React.js, and Vue.js
+
 Live Demo: https://defrostedjpg.github.io/simple-react-calculator/
 
 ![Calculator Screenshot](https://i.imgur.com/p302KFR.png)
